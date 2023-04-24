@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af08a0d1-b8f2-4358-a3cd-0b55dba2a4fe" name="Changes" comment="">
+    <list default="true" id="af08a0d1-b8f2-4358-a3cd-0b55dba2a4fe" name="Changes" comment="Completed printPlots method.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Plot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myFarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myFarm.java" afterDir="false" />
@@ -46,6 +46,14 @@
       <option name="presentableId" value="Default" />
       <updated>1682095063236</updated>
     </task>
+    <task id="LOCAL-00001" summary="Completed printPlots method.">
+      <created>1682177653723</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682177653723</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -58,5 +66,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Completed printPlots method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed printPlots method." />
   </component>
 </project>

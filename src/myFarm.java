@@ -4,7 +4,17 @@ public class myFarm {
     }
     public myFarm() {
         System.out.println("hello from my farm!");
-    }
 
-    //printPlots(); - tried "extends Plot", but it didn't work
+        Plot ryan = new Plot();
+        ryan.printPlot();
+
+        Plot [][] grid = new Plot [10][10];
+
+        for(int x=0; x<grid.length; x++) {
+            for (int y=0; y < grid[x].length; y++) {
+                grid[x][y] = new Plot();
+                grid[x][y].printPlot();
+        }
+        }
+    }
 }
