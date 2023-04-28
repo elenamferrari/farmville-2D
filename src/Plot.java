@@ -26,6 +26,7 @@ public class Plot {
             plantname = "empty";
             numberofplants=0;
         }
+
     }
         public void printPlot() {
             System.out.println("This plant is a " + plantname + ". There are " + numberofplants + " plants here. That this plant needs water is " + needswater + ".");

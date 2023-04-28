@@ -14,7 +14,13 @@ public class myFarm {
             for (int y=0; y < grid[x].length; y++) {
                 grid[x][y] = new Plot();
                 grid[x][y].printPlot();
+            }
         }
-        }
+       totalPlants();
+    }
+
+    public void totalPlants() {
+        for()
+        //how many total plants in the grid?
     }
 }
