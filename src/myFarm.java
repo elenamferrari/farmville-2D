@@ -3,7 +3,8 @@ public class myFarm {
         myFarm charlie = new myFarm();
     }
 
-    Plot [][] grid;
+    Plot[][] grid;
+
     public myFarm() {
         System.out.println("hello from my farm!");
 
@@ -12,10 +13,10 @@ public class myFarm {
 
         //ryan.numberofplants
 
-         grid = new Plot [10][3];
+        grid = new Plot[10][3];
 
-        for(int x=0; x<grid.length; x++) {
-            for (int y=0; y < grid[x].length; y++) {
+        for (int x = 0; x < grid.length; x++) {
+            for (int y = 0; y < grid[x].length; y++) {
                 grid[x][y] = new Plot();
                 grid[x][y].printPlot();
             }
@@ -25,13 +26,14 @@ public class myFarm {
         totalCarrots();
         averagenumberofPlants();
         numberofTomatoPlots();
-        }
+        numofEmptyPlots();
+    }
 
     public void totalPlants() {
         int sumofplants = 0;
 
-        for(int e=0; e<grid.length; e++) {
-            for(int c=0; c<grid[e].length; c++) {
+        for (int e = 0; e < grid.length; e++) {
+            for (int c = 0; c < grid[e].length; c++) {
                 //System.out.println(grid[e][c].numberofplants);
                 sumofplants += grid[e][c].numberofplants;
             }
@@ -50,10 +52,10 @@ public class myFarm {
 
     public void totalCarrots() {
         int sumofcarrots = 0;
-        for(int h=0; h<grid.length; h++) {
-            for(int k=0; k<grid[h].length; k++) {
-                if(grid[h][k].plantname.equals("carrot")) {
-                    sumofcarrots+=grid[h][k].numberofplants;
+        for (int h = 0; h < grid.length; h++) {
+            for (int k = 0; k < grid[h].length; k++) {
+                if (grid[h][k].plantname.equals("carrot")) {
+                    sumofcarrots += grid[h][k].numberofplants;
                     //or, sumofcarrots=sumofcarrots+1;
                 }
             }
@@ -64,29 +66,53 @@ public class myFarm {
     public void averagenumberofPlants() {
         int averagenumofplants = 0;
         int sumofplots = 0;
-        for(int h=0; h<grid.length; h++) {
-            for(int k=0; k<grid[h].length; k++) {
-                averagenumofplants +=grid[h][k].numberofplants;
-                sumofplots = grid[h].length*grid[h][k].numberofplants;
+        for (int h = 0; h < grid.length; h++) {
+            for (int k = 0; k < grid[h].length; k++) {
+                averagenumofplants += grid[h][k].numberofplants;
+                if (grid[h][k].numberofplants > 0) {
+                    sumofplots = grid[h].length * grid[h][k].numberofplants;
                 }
             }
-        System.out.println("the average number of plants per plot is " + averagenumofplants/sumofplots);
         }
+        System.out.println("the average number of plants per plot is " + averagenumofplants / sumofplots);
+    }
 
     public void numberofTomatoPlots() {
         int tomatoplots = 0;
-        for(int h=0; h<grid.length; h++) {
-            for(int k=0; k<grid[h].length; k++) {
-                if(grid[h][k].plantname.equals("tomato")) {
-                    tomatoplots =tomatoplots +1;
-                    }
+        for (int h = 0; h < grid.length; h++) {
+            for (int k = 0; k < grid[h].length; k++) {
+                if (grid[h][k].plantname.equals("tomato")) {
+                    tomatoplots = tomatoplots + 1;
                 }
             }
-        System.out.println("There are " + tomatoplots + " tomato plots.");
         }
+        System.out.println("There are " + tomatoplots + " tomato plots.");
+    }
 
-        //public void numofEmptyPlots ()
+    public void numofEmptyPlots() {
+        int emptyplots = 0;
+        for (int h = 0; h < grid.length; h++) {
+            for (int k = 0; k < grid[h].length; k++) {
+                if (grid[h][k].plantname.equals("empty")) {
+                    emptyplots = emptyplots + 1;
+                }
+            }
+        }
+        System.out.println("There are " + emptyplots + " empty plots.");
+    }
+
+    public void everyOtherNeedsWater(){
+        for (int h = 0; h < grid.length; h++) {
+            for (int k = 0; k < grid[h].length; k++) {
+                if (grid[h].length=) {
+
+                }
+            }
+        }
+    }
+
 }
+
 
 
 
