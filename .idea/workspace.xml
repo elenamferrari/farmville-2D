@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af08a0d1-b8f2-4358-a3cd-0b55dba2a4fe" name="Changes" comment="Made a 2D array for Plots.">
+    <list default="true" id="af08a0d1-b8f2-4358-a3cd-0b55dba2a4fe" name="Changes" comment="Made totalPlants and printPlantNames methods.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myFarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myFarm.java" afterDir="false" />
     </list>
@@ -66,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682648738268</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Made totalPlants and printPlantNames methods.">
+      <created>1682701506643</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682701506643</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,6 +90,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed printPlots method." />
     <MESSAGE value="Made a 2D array for Plots." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made a 2D array for Plots." />
+    <MESSAGE value="Made totalPlants and printPlantNames methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made totalPlants and printPlantNames methods." />
   </component>
 </project>
