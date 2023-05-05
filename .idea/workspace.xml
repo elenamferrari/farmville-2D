@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af08a0d1-b8f2-4358-a3cd-0b55dba2a4fe" name="Changes" comment="Made totalcarrots, avg num of plants, num of tomato plots." />
+    <list default="true" id="af08a0d1-b8f2-4358-a3cd-0b55dba2a4fe" name="Changes" comment="Made numofEmptyPlots, started work on everyOtherNeedsWater.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myFarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myFarm.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683066199499</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Made numofEmptyPlots, started work on everyOtherNeedsWater.">
+      <created>1683303612501</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683303612501</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +113,7 @@
     <MESSAGE value="Made a 2D array for Plots." />
     <MESSAGE value="Made totalPlants and printPlantNames methods." />
     <MESSAGE value="Made totalcarrots, avg num of plants, num of tomato plots." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made totalcarrots, avg num of plants, num of tomato plots." />
+    <MESSAGE value="Made numofEmptyPlots, started work on everyOtherNeedsWater." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made numofEmptyPlots, started work on everyOtherNeedsWater." />
   </component>
 </project>

@@ -27,6 +27,7 @@ public class myFarm {
         averagenumberofPlants();
         numberofTomatoPlots();
         numofEmptyPlots();
+        everyOtherNeedsWater();
     }
 
     public void totalPlants() {
@@ -104,11 +105,24 @@ public class myFarm {
     public void everyOtherNeedsWater(){
         for (int h = 0; h < grid.length; h++) {
             for (int k = 0; k < grid[h].length; k++) {
-                if (grid[h].length=) {
+                if (k%2==1) {
+                    grid[h][k].needswater=false;
+                }
+                System.out.println("Plot (" + h +"," + k + ") needs water is " + grid[h][k].needswater);
+            }
+        }
+    }
 
+    public void plantwithMaxNum() {
+        int tomatoplots = 0;
+        for (int h = 0; h < grid.length; h++) {
+            for (int k = 0; k < grid[h].length; k++) {
+                if (grid[h][k].plantname.equals("tomato")) {
+                    tomatoplots = tomatoplots + 1;
                 }
             }
         }
+        System.out.println("There are " + tomatoplots + " tomato plots.");
     }
 
 }
