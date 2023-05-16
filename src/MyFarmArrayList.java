@@ -12,7 +12,14 @@ public class MyFarmArrayList {
             System.out.println(row.size());
             row.add(new Plot());
             row.get(p).printPlot();
+            for (Plot e: row) {
+                System.out.println(e);
+            }
         }
         row.add(new Plot());
+//        System.out.println(row.get(1));
+//        row.size();
     }
 }
+
+//hw: go to w3schools.com/java/java_arraylist.app and find some way to change row?
