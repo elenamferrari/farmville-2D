@@ -8,17 +8,29 @@ public class MyFarmArrayList {
         //arr[0] = new Plot();
         //arr[0].printPlot();
 
+        for(Plot a : row) {
+            System.out.println(row.size());
+            row.add(new Plot());
+            a.printPlot();
+        }
+
         for(int p=0; p<10; p++) {
             System.out.println(row.size());
             row.add(new Plot());
             row.get(p).printPlot();
-            for (Plot e: row) {
-                System.out.println(e);
-            }
         }
         row.add(new Plot());
-//        System.out.println(row.get(1));
-//        row.size();
+        System.out.println(row.size());
+
+        totalPlants();
+
+    }
+    public void totalPlants() {
+        int total = 0;
+        for(Plot a : row) {
+            total += a.numberofplants;
+        }
+        System.out.println("total plants in my farm is " + total + "!");
     }
 }
 
