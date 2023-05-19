@@ -23,6 +23,10 @@ public class MyFarmArrayList {
         System.out.println(row.size());
 
         totalPlants();
+        printPlantNames();
+        addSunflower();
+        addCorn();
+        printPlantNames();
 
     }
     public void totalPlants() {
@@ -31,6 +35,37 @@ public class MyFarmArrayList {
             total += a.numberofplants;
         }
         System.out.println("total plants in my farm is " + total + "!");
+    }
+
+    public void printPlantNames() {
+//        for (Plot k: row) {
+//            System.out.print(k.plantname + "\t");
+//        }
+        for(int k=0; k<row.size(); k++) {
+            System.out.print(k + ": " + row.get(k).plantname + "\t");
+        }
+        System.out.println();
+    }
+
+    public void addSunflower() {
+        Plot sunflower = new Plot();
+        sunflower.plantname = "sunflower";
+        sunflower.printPlot();
+        sunflower.numberofplants = 42;
+        sunflower.needswater = true;
+
+        row.add(sunflower);
+    }
+
+    public void addCorn() {
+        Plot corn = new Plot();
+        corn.plantname = "corn";
+        corn.printPlot();
+        corn.numberofplants = 70;
+        corn.needswater = false;
+        corn.printPlot();
+
+        row.add(3, corn);
     }
 }
 
