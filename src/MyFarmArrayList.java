@@ -27,6 +27,10 @@ public class MyFarmArrayList {
         addSunflower();
         addCorn();
         printPlantNames();
+        tomatoLocations();
+        totalCarrots();
+        averagePlants();
+        carrotPlantsNum();
 
     }
     public void totalPlants() {
@@ -67,6 +71,45 @@ public class MyFarmArrayList {
 
         row.add(3, corn);
     }
-}
 
-//hw: go to w3schools.com/java/java_arraylist.app and find some way to change row?
+    public void tomatoLocations() {
+        for(int m=0; m<row.size(); m++) {
+            if(row.get(m).plantname.equals("tomato")) {
+                System.out.println(m);
+            }
+        }
+    }
+
+    public void totalCarrots() {
+        int numberofcarrots = 0;
+        for(Plot b:row) {
+            if(b.plantname.equals("carrot"))
+            numberofcarrots += b.numberofplants;
+        }
+        System.out.println("There are " + numberofcarrots + " carrots!");
+    }
+
+    public void averagePlants() {
+        int totalnumofplants = 0;
+        for(Plot a : row) {
+            totalnumofplants += a.numberofplants;
+        }
+        int totalplots = 0;
+        for(int p=0; p<row.size(); p++) {
+            if(row.get(p).numberofplants>0) {
+                totalplots=totalplots+1;
+            }
+        }
+        System.out.println("Avg num of plants is " + (totalnumofplants/totalplots));
+    }
+
+    public void carrotPlantsNum() {
+        int carrotplants = 0;
+        for(int c=0; c<row.size(); c++) {
+            if(row.get(c).plantname.equals("carrot")) {
+                carrotplants+=row.get(c).numberofplants;
+            }
+        }
+        System.out.println(carrotplants);
+    }
+}
