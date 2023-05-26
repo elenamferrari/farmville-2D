@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af08a0d1-b8f2-4358-a3cd-0b55dba2a4fe" name="Changes" comment="Modified MyFarmArrayList.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyFarmArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyFarmArrayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -24,13 +24,18 @@ public class MyFarmArrayList {
 
         totalPlants();
         printPlantNames();
+        printRowInfo();
         addSunflower();
         addCorn();
         printPlantNames();
         tomatoLocations();
         totalCarrots();
         averagePlants();
-        carrotPlantsNum();
+        carrotPlotsNum();
+        everyotherNeedsWater();
+        printRowInfo();
+        emptyPlotsNum();
+        plantwMaxNum();
 
     }
     public void totalPlants() {
@@ -49,6 +54,12 @@ public class MyFarmArrayList {
             System.out.print(k + ": " + row.get(k).plantname + "\t");
         }
         System.out.println();
+    }
+
+    public void printRowInfo() {
+        for(Plot a: row) {
+            a.printPlot();
+        }
     }
 
     public void addSunflower() {
@@ -100,16 +111,41 @@ public class MyFarmArrayList {
                 totalplots=totalplots+1;
             }
         }
-        System.out.println("Avg num of plants is " + (totalnumofplants/totalplots));
+        System.out.println("Avg num of plants per plot is " + (totalnumofplants/totalplots));
     }
 
-    public void carrotPlantsNum() {
-        int carrotplants = 0;
-        for(int c=0; c<row.size(); c++) {
-            if(row.get(c).plantname.equals("carrot")) {
-                carrotplants+=row.get(c).numberofplants;
+    public void carrotPlotsNum() {
+        int numberofcarrots = 0;
+        for(Plot b:row) {
+            if(b.plantname.equals("carrot"))
+                numberofcarrots += 1;
+        }
+        System.out.println("There are " + numberofcarrots + " carrot plots!");
+    }
+
+    public void emptyPlotsNum(){
+        int numberofempty = 0;
+        for(Plot b:row) {
+            if(b.plantname.equals("empty"))
+                numberofempty += 1;
+        }
+        System.out.println("There are " + numberofempty + " empty plots!");
+    }
+
+    public void everyotherNeedsWater() {
+        for(int n=0; n<row.size(); n++) {
+            if (n % 2 == 1) {
+                row.get(n).needswater=false;
+            }
+            else{
+                row.get(n).needswater=true;
             }
         }
-        System.out.println(carrotplants);
     }
+
+    public void plantwMaxNum() {
+
+    }
+
+
 }
